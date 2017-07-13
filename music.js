@@ -31,7 +31,7 @@ function getChannel(){
     $.ajax({
         url: 'https://api.jirengu.com/fm/getChannels.php',
         dataType: 'json',
-        Method: 'get',
+        Method: 'post',
         success: function(response){
             var channels = response.channels;
             var num = Math.floor(Math.random()*channels.length);
@@ -49,7 +49,7 @@ function getmusic(){
     $.ajax({
         url: 'https//api.jirengu.com/fm/getSong.php',
         dataType: 'json',
-        Method: 'get',
+        Method: 'post',
         data:{
             'channel': $('.record').attr('data-id')
         },
