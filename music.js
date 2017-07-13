@@ -29,7 +29,7 @@ function pause(){
 //获取频道信息
 function getChannel(){
     $.ajax({
-        url: 'http://api.jirengu.com/fm/getChannels.php',
+        url: 'https://api.jirengu.com/fm/getChannels.php',
         dataType: 'json',
         Method: 'get',
         success: function(response){
