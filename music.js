@@ -47,7 +47,7 @@ function getChannel(){
 // 通过ajax获取歌曲
 function getmusic(){
     $.ajax({
-        url: '//api.jirengu.com/fm/getSong.php',
+        url: 'https//api.jirengu.com/fm/getSong.php',
         dataType: 'json',
         Method: 'get',
         data:{
