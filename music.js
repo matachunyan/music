@@ -83,7 +83,7 @@ function getmusic(){
 function getlyric(){
     var Sid = $('audio').attr('sid');
     var Ssid = $('audio').attr('ssid');
-    $.post('http://api.jirengu.com/fm/getLyric.php', {ssid: Ssid, sid: Sid})
+    $.post('https://api.jirengu.com/fm/getLyric.php', {ssid: Ssid, sid: Sid})
         .done(function (lyr){
             console.log(lyr);
             var lyr = JSON.parse(lyr);;
