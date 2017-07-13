@@ -29,9 +29,9 @@ function pause(){
 //获取频道信息
 function getChannel(){
     $.ajax({
-        url: 'https://api.jirengu.com/fm/getChannels.php',
+        url: 'http://api.jirengu.com/fm/getChannels.php',
         dataType: 'json',
-        Method: 'post',
+        Method: 'get',
         success: function(response){
             var channels = response.channels;
             var num = Math.floor(Math.random()*channels.length);
@@ -47,9 +47,9 @@ function getChannel(){
 // 通过ajax获取歌曲
 function getmusic(){
     $.ajax({
-        url: 'https//api.jirengu.com/fm/getSong.php',
+        url: 'http//api.jirengu.com/fm/getSong.php',
         dataType: 'json',
-        Method: 'post',
+        Method: 'get',
         data:{
             'channel': $('.record').attr('data-id')
         },
